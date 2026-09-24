@@ -1,0 +1,352 @@
+﻿@media (max-width: 900px) {
+  .inverter-showcase {
+    padding-top: 110px;
+  }
+
+  .inverter-stage {
+    min-height: 560px;
+  }
+
+  .energy-ring-one {
+    width: 360px;
+    height: 360px;
+  }
+
+  .energy-ring-two {
+    width: 500px;
+    height: 500px;
+  }
+
+  .energy-pulse {
+    width: 540px;
+    height: 540px;
+  }
+
+  .inverter-device {
+    width: 230px;
+    height: 390px;
+  }
+
+  .device-display {
+    margin-top: 45px;
+  }
+
+  .device-display strong {
+    font-size: 42px;
+  }
+
+  .device-bars {
+    height: 65px;
+  }
+
+  .device-bottom {
+    margin-top: 35px;
+  }
+
+  .inverter-callout {
+    display: none;
+  }
+
+  .inverter-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .inverter-specs {
+    width: 100%;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .inverter-explore {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 560px) {
+  .inverter-showcase {
+    padding: 90px 0 70px;
+  }
+
+  .inverter-heading h2 {
+    font-size: clamp(45px, 14vw, 72px);
+  }
+
+  .inverter-heading p {
+    font-size: 13px;
+  }
+
+  .inverter-stage {
+    min-height: 500px;
+  }
+
+  .energy-ring-one {
+    width: 290px;
+    height: 290px;
+  }
+
+  .energy-ring-two {
+    width: 390px;
+    height: 390px;
+  }
+
+  .energy-pulse {
+    width: 430px;
+    height: 430px;
+  }
+
+  .inverter-device {
+    width: 205px;
+    height: 350px;
+    padding: 18px;
+  }
+
+  .device-display {
+    margin-top: 38px;
+    padding: 20px 15px;
+  }
+
+  .device-display strong {
+    font-size: 36px;
+  }
+
+  .device-bars {
+    height: 55px;
+    margin-top: 25px;
+  }
+
+  .device-bottom {
+    margin-top: 25px;
+    font-size: 6px;
+  }
+
+  .inverter-specs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .inverter-spec {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .inverter-spec strong {
+    font-size: 16px;
+  }
+
+  .inverter-spec span {
+    font-size: 8px;
+  }
+}
+@media (max-width: 900px) {
+  .power-flow {
+    padding: 110px 0 80px;
+  }
+
+  .power-flow-title-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .power-flow-title-row p {
+    max-width: 500px;
+  }
+
+  .power-system {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .power-node {
+    min-height: 180px;
+  }
+
+  .inverter-node {
+    min-height: 220px;
+  }
+
+  .flow-line {
+    width: 1px;
+    height: 70px;
+    margin: 0 auto;
+  }
+
+  .flow-energy {
+    top: 0;
+    left: -2px;
+    width: 5px;
+    height: 35px;
+  }
+
+  .power-flow-info {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .power-flow-time {
+    text-align: left;
+  }
+}
+
+@media (max-width: 560px) {
+  .power-flow {
+    padding: 90px 0 65px;
+  }
+
+  .power-flow-title-row h2 {
+    font-size: clamp(44px, 14vw, 70px);
+  }
+
+  .power-flow-control {
+    margin-top: 45px;
+  }
+
+  .power-flow-control button {
+    padding: 9px 12px;
+    font-size: 8px;
+  }
+
+  .power-node {
+    min-height: 160px;
+    border-radius: 20px;
+  }
+
+  .inverter-node {
+    min-height: 190px;
+  }
+
+  .node-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+
+  .power-node strong {
+    font-size: 16px;
+  }
+
+  .power-flow-info {
+    margin-top: 40px;
+  }
+
+  .power-status-message p {
+    font-size: 11px;
+  }
+
+  .power-flow-bottom {
+    margin-top: 55px;
+    font-size: 7px;
+    text-align: center;
+  }
+}
+@media (max-width: 900px) {
+  .technology-section {
+    padding: 110px 0 80px;
+  }
+
+  .technology-layout {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    margin-top: 70px;
+  }
+
+  .technology-list {
+    gap: 40px;
+  }
+
+  .technology-core {
+    min-height: 470px;
+    order: 2;
+  }
+
+  .technology-layout .technology-list:last-child {
+    order: 3;
+  }
+
+  .core-orbit-one {
+    width: 220px;
+    height: 220px;
+  }
+
+  .core-orbit-two {
+    width: 320px;
+    height: 320px;
+  }
+
+  .core-orbit-three {
+    width: 430px;
+    height: 430px;
+  }
+
+  .technology-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 560px) {
+  .technology-section {
+    padding: 90px 0 65px;
+  }
+
+  .technology-intro h2 {
+    font-size: clamp(44px, 14vw, 70px);
+  }
+
+  .technology-intro p {
+    font-size: 13px;
+  }
+
+  .technology-layout {
+    margin-top: 55px;
+  }
+
+  .technology-item {
+    grid-template-columns: 25px 42px 1fr;
+    gap: 10px;
+  }
+
+  .technology-item p {
+    font-size: 10px;
+  }
+
+  .technology-core {
+    min-height: 400px;
+  }
+
+  .core-device {
+    width: 195px;
+    height: 315px;
+  }
+
+  .core-screen {
+    margin-top: 55px;
+  }
+
+  .core-orbit-one {
+    width: 190px;
+    height: 190px;
+  }
+
+  .core-orbit-two {
+    width: 280px;
+    height: 280px;
+  }
+
+  .core-orbit-three {
+    width: 370px;
+    height: 370px;
+  }
+
+  .technology-bottom strong {
+    font-size: 19px;
+  }
+
+  .technology-bottom em {
+    display: block;
+    margin: 4px 0 0;
+  }
+}
