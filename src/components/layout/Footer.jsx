@@ -100,7 +100,7 @@ function Footer() {
               Installation
             </button>
 
-            <a href="/contact">
+            <a href={import.meta.env.BASE_URL + "contact"}>
               Contact Us
               <ArrowUpRight size={14} />
             </a>

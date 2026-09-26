@@ -22,6 +22,7 @@ import HeroAboutStack from "./components/home/HeroAboutStack";
 import ProductDetails from "./components/pages/ProductDetails";
 import Checkout from "./components/pages/Checkout";
 import ContactUs from "./components/pages/ContactUs";
+import products from "./data/products";
 
 const CART_STORAGE_KEY = "volterra-cart";
 
@@ -63,7 +64,12 @@ function AppContent() {
     try {
       const savedCart = localStorage.getItem(CART_STORAGE_KEY);
 
-      return savedCart ? JSON.parse(savedCart) : [];
+      return savedCart
+        ? JSON.parse(savedCart).map((item) => ({
+            ...item,
+            image: products.find((product) => product.id === item.id)?.image ?? item.image,
+          }))
+        : [];
     } catch {
       return [];
     }

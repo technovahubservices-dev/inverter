@@ -179,7 +179,7 @@ function ProductDetails({ onAddToCart }) {
                   className="product-checkout-button"
                   onClick={() => {
                     handleAddToCart();
-                    window.location.href = "/checkout";
+                    window.location.href = import.meta.env.BASE_URL + "checkout";
                   }}
                 >
                   Buy now

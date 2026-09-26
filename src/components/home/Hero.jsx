@@ -15,10 +15,10 @@ function Hero() {
           muted
           loop
           playsInline
-          poster="/images/hero/hero-poster.jpg"
+          poster={import.meta.env.BASE_URL + "images/hero/hero-poster.jpg"}
         >
           <source
-            src="/videos/hero/hero.mp4"
+            src={import.meta.env.BASE_URL + "videos/hero/hero.mp4"}
             type="video/mp4"
           />
         </video>

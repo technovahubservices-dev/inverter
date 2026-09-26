@@ -63,10 +63,10 @@ function PowerFlow() {
             loop
             playsInline
             preload="metadata"
-            poster="/images/hero/hero-poster.jpg"
+            poster={import.meta.env.BASE_URL + "images/hero/hero-poster.jpg"}
           >
             <source
-              src="/videos/how-it-works/how-it-works.mp4"
+              src={import.meta.env.BASE_URL + "videos/how-it-works/how-it-works.mp4"}
               type="video/mp4"
             />
           </video>

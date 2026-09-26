@@ -7,7 +7,7 @@
     description:
       "A premium residential inverter concept designed for essential everyday home backup.",
     price: 24999,
-    image: "/images/products/inverter-main.png",
+    image: import.meta.env.BASE_URL + "images/products/inverter-main.png",
     badge: "EVERYDAY",
 
     coverageLevel: 1,
@@ -36,7 +36,7 @@
     description:
       "A larger residential inverter concept for homes with broader backup requirements.",
     price: 34999,
-    image: "/images/products/inverter-main.png",
+    image: import.meta.env.BASE_URL + "images/products/inverter-main.png",
     badge: "POPULAR",
 
     coverageLevel: 2,
@@ -67,7 +67,7 @@
     description:
       "A premium residential inverter concept built for broader everyday power requirements.",
     price: 49999,
-    image: "/images/products/inverter-main.png",
+    image: import.meta.env.BASE_URL + "images/products/inverter-main.png",
     badge: "PREMIUM",
 
     coverageLevel: 3,

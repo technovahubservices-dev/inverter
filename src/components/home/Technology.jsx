@@ -98,10 +98,10 @@ function Technology() {
               loop
               playsInline
               preload="metadata"
-              poster="/images/hero/hero-poster.jpg"
+              poster={import.meta.env.BASE_URL + "images/hero/hero-poster.jpg"}
             >
               <source
-                src="/videos/technology/technology.mp4"
+                src={import.meta.env.BASE_URL + "videos/technology/technology.mp4"}
                 type="video/mp4"
               />
             </video>

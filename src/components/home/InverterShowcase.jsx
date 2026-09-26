@@ -85,7 +85,7 @@ function InverterShowcase() {
                 }}
               >
                 <img
-                  src="/images/about/about-main.png"
+                  src={import.meta.env.BASE_URL + "images/about/about-main.png"}
                   alt="VOLTERRA power designed around modern life"
                 />
 
@@ -115,7 +115,7 @@ function InverterShowcase() {
                 }}
               >
                 <img
-                  src="/images/about/about-detail.png"
+                  src={import.meta.env.BASE_URL + "images/about/about-detail.png"}
                   alt="VOLTERRA inverter engineering detail"
                 />
 
@@ -177,7 +177,7 @@ function InverterShowcase() {
             })}
 
             <motion.a
-              href="/#products"
+              href={import.meta.env.BASE_URL + "#products"}
               className="about-volterra-explore"
               initial={{
                 opacity: 0,

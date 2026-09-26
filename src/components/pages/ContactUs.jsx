@@ -34,7 +34,7 @@ function ContactUs() {
       <div className="contact-page-glow contact-page-glow-two" />
 
       <header className="contact-header">
-        <a href="/" className="contact-brand">
+        <a href={import.meta.env.BASE_URL + ""} className="contact-brand">
           <span className="brand-mark">
             <span />
             <span />
@@ -42,7 +42,7 @@ function ContactUs() {
           <span>VOLTERRA</span>
         </a>
 
-        <a href="/" className="contact-back">
+        <a href={import.meta.env.BASE_URL + ""} className="contact-back">
           <ArrowLeft size={16} />
           Back to home
         </a>
