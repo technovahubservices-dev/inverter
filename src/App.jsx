@@ -180,13 +180,18 @@ function AppContent() {
                 hero={<Hero />}
                 about={<InverterShowcase />}
               />
+
               <PowerFlow />
+
               <InverterRange
                 onAddToCart={addToCart}
                 cartItems={cartItems}
               />
+
               <FindYourInverter />
+
               <Technology />
+
               <Support />
             </main>
           }
@@ -245,15 +250,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,6 +1,7 @@
 ﻿import SearchOverlay from "./SearchOverlay";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import {
   ArrowUpRight,
   Menu,
@@ -53,37 +54,56 @@ function Navbar({ cartCount, onCartOpen }) {
         }}
       >
         <div className="navbar-inner">
-          <a href="/" className="brand" aria-label="VOLTERRA home">
+
+          {/* Logo */}
+          <Link
+            to="/"
+            className="brand"
+            aria-label="VOLTERRA home"
+          >
             <span className="brand-mark">
               <span />
               <span />
             </span>
 
-            <span className="brand-name">VOLTERRA</span>
-          </a>
+            <span className="brand-name">
+              VOLTERRA
+            </span>
+          </Link>
 
-          <nav className="desktop-nav" aria-label="Primary navigation">
+          {/* Desktop Navigation */}
+          <nav
+            className="desktop-nav"
+            aria-label="Primary navigation"
+          >
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.label}
-                href={item.href}
+                to={item.href}
                 className="nav-link"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </nav>
 
+          {/* Navbar Actions */}
           <div className="navbar-actions">
+
+            {/* Search */}
             <button
               type="button"
               className="nav-icon"
               aria-label="Search"
               onClick={() => setSearchOpen(true)}
             >
-              <Search size={18} strokeWidth={1.8} />
+              <Search
+                size={18}
+                strokeWidth={1.8}
+              />
             </button>
 
+            {/* Cart */}
             <button
               type="button"
               className="nav-icon cart-button"
@@ -92,7 +112,10 @@ function Navbar({ cartCount, onCartOpen }) {
               }`}
               onClick={onCartOpen}
             >
-              <ShoppingBag size={18} strokeWidth={1.8} />
+              <ShoppingBag
+                size={18}
+                strokeWidth={1.8}
+              />
 
               <span
                 className={`cart-count ${
@@ -103,14 +126,16 @@ function Navbar({ cartCount, onCartOpen }) {
               </span>
             </button>
 
-            <a
-              href="/#products"
+            {/* Explore Inverters */}
+            <Link
+              to="/#products"
               className="quote-button"
             >
               Explore Inverters
               <ArrowUpRight size={15} />
-            </a>
+            </Link>
 
+            {/* Mobile Menu Button */}
             <button
               type="button"
               className="mobile-menu-button"
@@ -123,11 +148,13 @@ function Navbar({ cartCount, onCartOpen }) {
         </div>
       </motion.header>
 
+      {/* Search Overlay */}
       <SearchOverlay
         isOpen={searchOpen}
         onClose={() => setSearchOpen(false)}
       />
 
+      {/* Mobile Menu */}
       <AnimatePresence>
         {menuOpen && (
           <motion.div
@@ -136,14 +163,16 @@ function Navbar({ cartCount, onCartOpen }) {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
+            {/* Mobile Menu Header */}
             <div className="mobile-menu-header">
-              <a
-                href="/"
+
+              <Link
+                to="/"
                 className="brand-name"
                 onClick={closeMenu}
               >
                 VOLTERRA
-              </a>
+              </Link>
 
               <button
                 type="button"
@@ -155,12 +184,14 @@ function Navbar({ cartCount, onCartOpen }) {
               </button>
             </div>
 
-            <nav className="mobile-nav" aria-label="Mobile navigation">
+            {/* Mobile Navigation */}
+            <nav
+              className="mobile-nav"
+              aria-label="Mobile navigation"
+            >
               {navItems.map((item, index) => (
-                <motion.a
+                <motion.div
                   key={item.label}
-                  href={item.href}
-                  onClick={closeMenu}
                   initial={{
                     opacity: 0,
                     y: 20,
@@ -173,25 +204,31 @@ function Navbar({ cartCount, onCartOpen }) {
                     delay: index * 0.08,
                   }}
                 >
-                  <span>
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
+                  <Link
+                    to={item.href}
+                    onClick={closeMenu}
+                  >
+                    <span>
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
 
-                  {item.label}
+                    {item.label}
 
-                  <ArrowUpRight size={20} />
-                </motion.a>
+                    <ArrowUpRight size={20} />
+                  </Link>
+                </motion.div>
               ))}
-          </nav>
+            </nav>
 
-            <a
-              href="/#products"
+            {/* Mobile Explore Button */}
+            <Link
+              to="/#products"
               className="mobile-contact"
               onClick={closeMenu}
             >
               Explore Inverters
               <ArrowUpRight size={18} />
-            </a>
+            </Link>
           </motion.div>
         )}
       </AnimatePresence>
@@ -200,10 +237,3 @@ function Navbar({ cartCount, onCartOpen }) {
 }
 
 export default Navbar;
-
-
-
-
-
-
-
